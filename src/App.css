@@ -36,3 +36,84 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.job-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.btn-apply {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: 1;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .job-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    justify-items: center;
+  }
+
+  .filter-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .job-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    justify-items: center;
+  }
+
+  .filter-container {
+    display: grid;
+
+    gap: 10px;
+    justify-items: center;
+    /* flex-wrap: 1; */
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .job-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    justify-items: center;
+  }
+
+  .filter-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+    /* flex-wrap: 1; */
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+}
